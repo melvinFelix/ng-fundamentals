@@ -3,7 +3,7 @@ import { Component, Input, Output } from '@angular/core'
 @Component({
     selector: 'event-thumbnail',
     template: `
-    <div class="well hoverwell thumbnail">
+    <div [routerLink]="['/events', evento.id]" class="well hoverwell thumbnail">
         <h2>{{evento?.name}}</h2>
         <div>Date: {{evento?.date}}</div>
         <div [ngSwitch] = "evento?.time">
