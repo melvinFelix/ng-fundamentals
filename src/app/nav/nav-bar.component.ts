@@ -16,6 +16,9 @@ import { componentFactoryName } from "@angular/compiler";
                 display: none
             }
         }
+        li > a.active {
+            color: #F97924;
+        }
     `]
 })
 
