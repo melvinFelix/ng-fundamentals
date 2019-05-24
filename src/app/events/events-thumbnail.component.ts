@@ -13,7 +13,7 @@ import { Component, Input, Output } from '@angular/core'
             <span *ngSwitchDefault>(Normal Start)</span>
         </div>
         <div>Price: \${{evento?.price}}</div>
-        <div *ngIf="event?.location">
+        <div *ngIf="evento?.location">
             <span>Location: {{evento?.location.address}}</span>
             <span class="pad-left">{{evento?.location.city}}, {{evento?.location.country}}</span>
         </div>
